@@ -2,7 +2,7 @@ import { useState } from "react";
 import DonationCont from "./DonationCont";
 import FundList from "./FundList";
 import BackingConfirmModal from "./BackingConfirmModal";
-
+import Logo from "./Logo";
 const CardsCont = () => {
   const [bookmarked, setBookmarked] = useState(false);
   const [backingConformation, setBackingConformation] = useState(false);
@@ -37,11 +37,14 @@ const CardsCont = () => {
             }`}
             onClick={() => setBookmarked(!bookmarked)}
           >
-            <img
-              src={bookmarked ? "" : "/images/icon-bookmark.svg"}
-              alt="icon-bookmark.svg"
-              className="w-14"
-            />
+            {bookmarked ? (
+              <Logo
+                fillBg="hsl(176, 72%, 28%)"
+                fillIcon="hsl(0, 0.00%, 100.00%)"
+              />
+            ) : (
+              <Logo fillBg="#2F2F2F" fillIcon="#B1B1B1" />
+            )}
             <p
               className={`hidden md:block ${
                 bookmarked ? "text-Green-400" : "text-Gray-500"

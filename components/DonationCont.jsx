@@ -37,7 +37,7 @@ const DonationCont = () => {
         aria-valuemax="100"
       >
         <div
-          className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500"
+          className="flex flex-col justify-center rounded-full overflow-hidden bg-Green-400 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-Green-400"
           style={{ width: `${width}%` }}
         />
       </div>

@@ -33,7 +33,12 @@ const BackingConfirmModal = ({ setBackingConformation, title }) => {
         </p>
 
         <label name="pledge-choice" id="pledge-choice">
-          <RadioChoices />
+          <RadioChoices
+            desc="Choose to support us without a reward if you simply believe in our
+        project. As a backer, you will be signed up to receive product updates
+        via email."
+            title="Pledge with no reward"
+          />
 
           {allFundTypes.map((fund) => (
             <RadioChoices key={fund.id} {...fund} />
